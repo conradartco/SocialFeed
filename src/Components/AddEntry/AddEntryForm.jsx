@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './AddEntryForm.css';
 
 const AddEntryForm = (props) => {
 
@@ -18,14 +18,22 @@ const AddEntryForm = (props) => {
     }
 
     return ( 
-        <form onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input type='name' value={name} onChange={(event) => setName(event.target.value)}/>
-            <label>Post</label>
-            <input type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
-            <label>Date</label>
-            <input type='date' value={date} onChange={(event) => setDate(event.target.value)}/>
-            <button type='submit'>Submit</button>
+        <form onSubmit={handleSubmit} className='form-grid'>
+            <div className='form-group'>
+                <label>Name</label>
+                <input type='name' value={name} onChange={(event) => setName(event.target.value)}/>
+            </div>
+            <div className='form-group'>
+                <label>Post</label>
+                <input type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
+            </div>
+            <div className='form-group'>
+                <label>Date</label>
+                <input type='date' value={date} onChange={(event) => setDate(event.target.value)}/>
+            </div>
+            <div>
+                <button type='submit' className='btn btn-primary' style={{'margin-top': '1em'}}>Submit</button>
+            </div>
         </form>
      );
 }

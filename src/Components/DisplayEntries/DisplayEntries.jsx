@@ -2,15 +2,23 @@
 const DisplayEntries = (props) => {
     return ( 
         <section>
+            <div>
             {props.parentEntries.map((entry) => {
                 return (
-                <div>
-                    <ul value={entry.name}/>
-                    <ul value={entry.post}/>
-                    <ul value={entry.date}/>
-                </div>
-                )
+                    <div>
+                        <div>
+                            <p>{entry.name}</p>
+                        </div>
+                        <div>
+                            <p>{entry.post}</p>
+                        </div>
+                        <div>
+                            <p>{entry.date}</p>
+                        </div>
+                    </div>
+                );
             })}
+            </div>
        </section>
      );
 }
