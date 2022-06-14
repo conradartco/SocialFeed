@@ -1,20 +1,17 @@
 
 const DisplayEntries = (props) => {
     return ( 
-        <div>
+        <section>
             {props.parentEntries.map((entry) => {
                 return (
-                <form>
-                    <label>Name</label>
-                    <input value={entry.name}/>
-                    <label>Post</label>
-                    <input value={entry.post}/>
-                    <label>Date</label>
-                    <input value={entry.date}/>
-                </form>
+                <div>
+                    <ul value={entry.name}/>
+                    <ul value={entry.post}/>
+                    <ul value={entry.date}/>
+                </div>
                 )
             })}
-       </div>
+       </section>
      );
 }
  
