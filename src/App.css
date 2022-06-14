@@ -3,6 +3,19 @@
     border: 1px;
     border-style: solid;
     border-color: black;
+    border-radius: 1em;
+    background-color: white;
     margin: 1em;
     padding: 1em;
+    max-width: 800px;
+}
+
+.body-style {
+    background-color: rgb(197, 218, 197);
+}
+
+.header-style {
+    position: sticky;
+    background-color: white;
+    display: block;
 }

@@ -1,3 +1,4 @@
+import PostDisplay from "./PostDisplay";
 
 const DisplayEntries = (props) => {
     return ( 
@@ -5,17 +6,7 @@ const DisplayEntries = (props) => {
             <div>
             {props.parentEntries.map((entry) => {
                 return (
-                    <div>
-                        <div>
-                            <p>{entry.name}</p>
-                        </div>
-                        <div>
-                            <p>{entry.post}</p>
-                        </div>
-                        <div>
-                            <p>{entry.date}</p>
-                        </div>
-                    </div>
+                    <PostDisplay parentImport={entry}/>
                 );
             })}
             </div>

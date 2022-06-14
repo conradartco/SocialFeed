@@ -1,4 +1,10 @@
 
 .form-grid {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: row-reverse;
 }
