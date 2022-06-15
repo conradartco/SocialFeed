@@ -11,8 +11,12 @@ const PostDisplay = (props) => {
                 <p>{props.parentImport.post}</p>
             </div>
             <div>
-                <button>Like</button>
-                <button>Dislike</button>
+                <div>
+                    <button className="fa-solid fa-thumbs-up"></button>{props.parentImport.isLike ? <p>I like this!</p> : null}
+                </div>
+                <div>
+                    <button className='fa-solid fa-thumbs-down'></button>{props.parentImport.isDislike ? <p>I dislike this</p> : null}
+                </div>
             </div>
             <hr></hr>
         </div>

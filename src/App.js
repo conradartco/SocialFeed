@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
 
-  const [entries, setEntries] = useState([{name: 'JC', post: 'This is my initial post!'}])
+  const [entries, setEntries] = useState([{id: 1, name: 'JC', post: 'This is my initial post!', isLike: false, isDislike: false}])
 
   function addNewEntry(entry) {
 
@@ -20,16 +20,16 @@ function App() {
       <header className='header-style'>
         <NavBar />
       </header>
-      <body className='body-style'>
+      <div className='body-style'>
         <div className='container-fluid'>
           <div className='border-box'>
-            <AddEntryForm addNewEntry={addNewEntry}/>
+            <AddEntryForm addNewEntry={addNewEntry} array={entries}/>
           </div>
           <div className='border-box'>
             <DisplayEntries parentEntries={entries}/>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
 }

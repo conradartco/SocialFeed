@@ -6,7 +6,7 @@ const DisplayEntries = (props) => {
             <div>
             {props.parentEntries.map((entry) => {
                 return (
-                    <PostDisplay parentImport={entry}/>
+                    <PostDisplay key={entry.id} parentImport={entry}/>
                 );
             })}
             </div>
