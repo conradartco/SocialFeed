@@ -1,10 +1,48 @@
 
 .form-grid {
     display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.input-container {
+    margin-right: 1em;
+    display: flex;
     flex-direction: column;
+    width: 83%;
+}
+
+.name-field {
+    display: flex;
+    width: 100%;
+    height: 2em;
+    padding: .375em;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-bottom: .5em;
+}
+
+.post-field {
+    display: flex;
+    width: 100%;
+    height: 4em;
+    padding: .375em;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
 }
 
 .submit-button {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.form-group {
+    display: flex;
+}
+
+.label {
+    color: grey;
+    margin-right: 1em;
 }

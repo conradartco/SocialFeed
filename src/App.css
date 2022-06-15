@@ -5,9 +5,12 @@
     border-color: black;
     border-radius: 1em;
     background-color: white;
-    margin: 1em;
+    margin: .5em;
     padding: 1em;
-    max-width: 800px;
+    min-width: 650px;
+    max-width: 650px;
+    border-style: none;
+    border-bottom: inset;
 }
 
 .body-style {
@@ -18,4 +21,9 @@
     position: sticky;
     background-color: white;
     display: block;
+}
+
+.container-fluid {
+    display: grid;
+    justify-items: center;
 }

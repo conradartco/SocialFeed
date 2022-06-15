@@ -15,7 +15,7 @@ const SocialButtonLike = (props) => {
     }
 
     return ( 
-        <div className='button-format'>
+        <div>
             <button className={buttonClass} onClick={handleClick}><i className="fa-solid fa-thumbs-up"></i></button>
         </div>
      );

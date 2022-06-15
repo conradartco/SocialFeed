@@ -9,7 +9,7 @@ const PostDisplay = (props) => {
             <div className='name-format'>
                 <p>{props.parentImport.name}</p>
             </div>
-            <div className='post-format'>
+            <div className='post-style'>
                 <p>{props.parentImport.post}</p>
             </div>
             <div className='icon-format'>

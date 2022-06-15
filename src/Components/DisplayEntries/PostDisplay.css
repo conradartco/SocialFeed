@@ -4,10 +4,16 @@
 }
 
 .post-format {
-    font-style: italic;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 .icon-format {
     display: flex;
     justify-content: flex-end;
+}
+
+.post-style {
+    font-style: italic;
+    font-size: smaller;
 }
