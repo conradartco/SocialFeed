@@ -12,16 +12,11 @@ const PostDisplay = (props) => {
             <div className='post-format'>
                 <p>{props.parentImport.post}</p>
             </div>
-            <div>
-                <div>
-                    <SocialButtonLike />
-                    {/* {props.parentImport.isDislike ? <SocialButtonLike className='fa-solid fa-thumbs-up'/> : null} */}
-                    {/* <button className="fa-solid fa-thumbs-up">{props.parentImport.isLike ? <SocialButtonLike /> : null}</button> */}
-                </div>
-                <div>
-                    <SocialButtonDislike />
-                    {/* <button className='fa-solid fa-thumbs-down'></button>{props.parentImport.isDislike ? <SocialButtonDislike /> : null} */}
-                </div>
+            <div className='icon-format'>
+                <SocialButtonLike />
+                {/* <button className="fa-solid fa-thumbs-up">{props.parentImport.isLike ? <SocialButtonLike /> : null}</button> */}
+                <SocialButtonDislike />
+                {/* <button className='fa-solid fa-thumbs-down'></button>{props.parentImport.isDislike ? <SocialButtonDislike /> : null} */}
             </div>
             <hr></hr>
         </div>

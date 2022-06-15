@@ -6,3 +6,8 @@
 .post-format {
     font-style: italic;
 }
+
+.icon-format {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,12 +1,23 @@
 
 .active-like {
     color: rgb(52, 157, 48);
+    border-width:0;
+    background-color: #fffafa00;
 }
 
 .active-dislike {
     color: darkred;
+    border-width:0;
+    background-color: #fffafa00;
 }
 
 .inactive {
     color: rgb(177, 177, 177);
+    border-width:0;
+    background-color: #fffafa00;
 }
+
+/* .button-format {
+    display: grid;
+    justify-content: end;
+} */
