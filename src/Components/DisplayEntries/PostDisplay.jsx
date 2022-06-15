@@ -1,3 +1,5 @@
+import SocialButtonDislike from '../SocialButton/SocialButtonDislike';
+import SocialButtonLike from '../SocialButton/SocialButtonLike';
 import './PostDisplay.css';
 
 const PostDisplay = (props) => {
@@ -12,10 +14,13 @@ const PostDisplay = (props) => {
             </div>
             <div>
                 <div>
-                    <button className="fa-solid fa-thumbs-up"></button>{props.parentImport.isLike ? <p>I like this!</p> : null}
+                    <SocialButtonLike />
+                    {/* {props.parentImport.isDislike ? <SocialButtonLike className='fa-solid fa-thumbs-up'/> : null} */}
+                    {/* <button className="fa-solid fa-thumbs-up">{props.parentImport.isLike ? <SocialButtonLike /> : null}</button> */}
                 </div>
                 <div>
-                    <button className='fa-solid fa-thumbs-down'></button>{props.parentImport.isDislike ? <p>I dislike this</p> : null}
+                    <SocialButtonDislike />
+                    {/* <button className='fa-solid fa-thumbs-down'></button>{props.parentImport.isDislike ? <SocialButtonDislike /> : null} */}
                 </div>
             </div>
             <hr></hr>

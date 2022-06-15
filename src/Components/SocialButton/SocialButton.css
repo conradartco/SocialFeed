@@ -1,0 +1,12 @@
+
+.active-like {
+    color: rgb(52, 157, 48);
+}
+
+.active-dislike {
+    color: darkred;
+}
+
+.inactive {
+    color: rgb(177, 177, 177);
+}
